@@ -820,7 +820,7 @@
 
 ## <a name='commas'>Commas</a> [원문](https://github.com/airbnb/javascript#commas)
 
-  - 선두의 comma는 **하지마십시오**
+  - 선두의 comma는 **하지마십시오.**
 
     ```javascript
     // bad
@@ -850,7 +850,7 @@
     };
     ```
 
-　- 말미의 불필요한 쉼표도 ** 하지 마십시오. ** 이것은 IE6/7과 quirksmode의 IE9에서 문제를 일으킬 수 있습니다.
+　- 말미의 불필요한 쉼표도 **하지 마십시오.** 이것은 IE6/7과 quirksmode의 IE9에서 문제를 일으킬 수 있습니다.
   또한 ES3의 일부 구현에서 불필요한 쉼표가 있는 경우, 배열 길이를 추가합니다.
   이것은 ES5에서 분명해졌습니다.([source](http://es5.github.io/#D)):
 
