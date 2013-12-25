@@ -69,7 +69,7 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-    **[[⬆]](#TOC)**
+    **[[↑]](#TOC)**
 
 ## <a name='objects'>Objects</a> [원문](https://github.com/airbnb/javascript#objects)
 
