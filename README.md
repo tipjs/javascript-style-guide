@@ -88,7 +88,7 @@
 
 ## 참조(References)
 
-  - [2.1](#2.1) <a name='2.1'></a> Use `const` for all of your references; avoid using `var`.
+  - [2.1](#2.1) <a name='2.1'></a> Use `const` for all of your references; avoid using `var`. eslint: [`prefer-const`](http://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign.html) 
   - [2.1](#2.1) <a name='2.1'></a> 모든 참조는 `const` 를 사용하고, `var` 를 사용하지 마십시오.
 
   > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
@@ -105,7 +105,7 @@
     const b = 2;
     ```
 
-  - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`.
+  - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
   - [2.2](#2.2) <a name='2.2'></a> 참조를 재할당 해야한다면 `var` 대신 `let` 을 사용하십시오.
 
   > Why? `let` is block-scoped rather than function-scoped like `var`.
@@ -144,7 +144,7 @@
 
 ## 오브젝트(Objects)
 
-  - [3.1](#3.1) <a name='3.1'></a> Use the literal syntax for object creation.
+  - [3.1](#3.1) <a name='3.1'></a> Use the literal syntax for object creation. eslint: [`no-new-object`](http://eslint.org/docs/rules/no-new-object.html)
   - [3.1](#3.1) <a name='3.1'></a> 오브젝트를 작성할때는, 리터럴 구문을 사용하십시오.
 
     ```javascript
@@ -155,46 +155,9 @@
     const item = {};
     ```
 
-  - [3.2](#3.2) <a name='3.2'></a> If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code.
-  - [3.2](#3.2) <a name='3.2'></a> 코드가 브라우저상의 스크립트로 실행될때 [예약어](http://es5.github.io/#x7.6.1)를 키로 이용하지 마십시오. IE8에서 작동하지 않습니다. [More info](https://github.com/airbnb/javascript/issues/61) 하지만 ES6 모듈안이나 서버사이드에서는 이용가능합니다.
-
-    ```javascript
-    // bad
-    const superman = {
-      default: { clark: 'kent' },
-      private: true,
-    };
-
-    // good
-    const superman = {
-      defaults: { clark: 'kent' },
-      hidden: true,
-    };
-    ```
-
-  - [3.3](#3.3) <a name='3.3'></a> Use readable synonyms in place of reserved words.
-  - [3.3](#3.3) <a name='3.3'></a> 예약어 대신 알기쉬운 동의어를 사용해 주십시오.
-
-    ```javascript
-    // bad
-    const superman = {
-      class: 'alien',
-    };
-
-    // bad
-    const superman = {
-      klass: 'alien',
-    };
-
-    // good
-    const superman = {
-      type: 'alien',
-    };
-    ```
-
   <a name="es6-computed-properties"></a>
-  - [3.4](#3.4) <a name='3.4'></a> Use computed property names when creating objects with dynamic property names.
-  - [3.4](#3.4) <a name='3.4'></a> 동적 프로퍼티명을 갖는 오브젝트를 작성할때, 계산된 프로퍼티명(computed property names)을 이용해 주십시오.
+  - [3.2](#3.2) <a name='3.2'></a> Use computed property names when creating objects with dynamic property names.
+  - [3.2](#3.2) <a name='3.2'></a> 동적 프로퍼티명을 갖는 오브젝트를 작성할때, 계산된 프로퍼티명(computed property names)을 이용해 주십시오.
 
   > Why? They allow you to define all the properties of an object in one place.
 
@@ -202,7 +165,7 @@
 
     ```javascript
     function getKey(k) {
-      return a `key named ${k}`;
+      return `a key named ${k}`;
     }
 
     // bad
@@ -221,8 +184,8 @@
     ```
 
   <a name="es6-object-shorthand"></a>
-  - [3.5](#3.5) <a name='3.5'></a> Use object method shorthand.
-  - [3.5](#3.5) <a name='3.5'></a> 메소드의 단축구문을 이용해 주십시오.
+  - [3.3](#3.3) <a name='3.3'></a> Use object method shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
+  - [3.3](#3.3) <a name='3.3'></a> 메소드의 단축구문을 이용해 주십시오.
 
     ```javascript
     // bad
@@ -245,8 +208,8 @@
     ```
 
   <a name="es6-object-concise"></a>
-  - [3.6](#3.6) <a name='3.6'></a> Use property value shorthand.
-  - [3.6](#3.6) <a name='3.6'></a> 프로퍼티의 단축구문을 이용해 주십시오.
+  - [3.4](#3.4) <a name='3.4'></a> Use property value shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
+  - [3.4](#3.4) <a name='3.4'></a> 프로퍼티의 단축구문을 이용해 주십시오.
 
   > Why? It is shorter to write and descriptive.
 
@@ -266,8 +229,8 @@
     };
     ```
 
-  - [3.7](#3.7) <a name='3.7'></a> Group your shorthand properties at the beginning of your object declaration.
-  - [3.7](#3.7) <a name='3.7'></a> 프로퍼티의 단축구문은 오브젝트 선언의 시작부분에 그룹화 해주십시오.
+  - [3.5](#3.5) <a name='3.5'></a> Group your shorthand properties at the beginning of your object declaration.
+  - [3.5](#3.5) <a name='3.5'></a> 프로퍼티의 단축구문은 오브젝트 선언의 시작부분에 그룹화 해주십시오.
 
   > Why? It's easier to tell which properties are using the shorthand.
 
@@ -297,6 +260,70 @@
       mayTheFourth: 4,
     };
     ```
+    
+  <a name="objects--quoted-props"></a>
+  - [3.6](#3.6) <a name='3.6'></a>  Only quote properties that are invalid identifiers. eslint: [`quote-props`](http://eslint.org/docs/rules/quote-props.html) jscs: [`disallowQuotedKeysInObjects`](http://jscs.info/rule/disallowQuotedKeysInObjects)
+  - [3.6](#3.6) <a name='3.6'></a> 유효하지 않은 식별자만 따옴표 속성 사용.
+  
+    > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
+    > 왜? 일반적으로 우리는 주관적으로 읽기 쉽다고 생각한다. 이는 구문 강조를 향상시키며, 많은 자바스크립트 엔진에의해 쉽게 최적화될 수 있다.
+    
+    ```javascript
+    // bad
+    const bad = {
+      'foo': 3,
+      'bar': 4,
+      'data-blah': 5,
+    };
+
+    // good
+    const good = {
+      foo: 3,
+      bar: 4,
+      'data-blah': 5,
+    };
+    ```
+
+  <a name="objects--prototype-builtins"></a>
+  - [3.7](#objects--prototype-builtins) Do not call `Object.prototype` methods directly, such as `hasOwnProperty`, `propertyIsEnumerable`, and `isPrototypeOf`.
+
+    > Why? These methods may be shadowed by properties on the object in question - consider `{ hasOwnProperty: false }` - or, the object may be a null object (`Object.create(null)`).
+
+    ```javascript
+    // bad
+    console.log(object.hasOwnProperty(key));
+
+    // good
+    console.log(Object.prototype.hasOwnProperty.call(object, key));
+
+    // best
+    const has = Object.prototype.hasOwnProperty; // cache the lookup once, in module scope.
+    /* or */
+    import has from 'has';
+    // ...
+    console.log(has.call(object, key));
+    ```
+
+  <a name="objects--rest-spread"></a>
+  - [3.8](#objects--rest-spread) Prefer the object spread operator over [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.
+
+    ```javascript
+    // very bad
+    const original = { a: 1, b: 2 };
+    const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
+    delete copy.a; // so does this
+
+    // bad
+    const original = { a: 1, b: 2 };
+    const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
+
+    // good
+    const original = { a: 1, b: 2 };
+    const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
+
+    const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
+    ```  
+
 
 **[⬆ back to top](#목차)**
 
