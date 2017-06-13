@@ -718,7 +718,7 @@
       this.total = 0;
       return this;
     }
-  ```
+    ```
 
     **[[↑]](#TOC)**
 
