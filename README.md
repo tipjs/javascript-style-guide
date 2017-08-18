@@ -91,9 +91,9 @@
   - [2.1](#2.1) <a name='2.1'></a> Use `const` for all of your references; avoid using `var`.
   - [2.1](#2.1) <a name='2.1'></a> 모든 참조는 `const` 를 사용하고, `var` 를 사용하지 마십시오.
 
-  > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
+    > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
 
-  > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는것을 방지합니다.
+    > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는것을 방지합니다.
 
     ```javascript
     // bad
@@ -108,9 +108,9 @@
   - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`.
   - [2.2](#2.2) <a name='2.2'></a> 참조를 재할당 해야한다면 `var` 대신 `let` 을 사용하십시오.
 
-  > Why? `let` is block-scoped rather than function-scoped like `var`.
+    > Why? `let` is block-scoped rather than function-scoped like `var`.
 
-  > 왜? `var` 같은 함수스코프 보다는 오히려 블록스코프의 `let`
+    > 왜? `var` 같은 함수스코프 보다는 오히려 블록스코프의 `let`
 
     ```javascript
     // bad
@@ -196,9 +196,9 @@
   - [3.4](#3.4) <a name='3.4'></a> Use computed property names when creating objects with dynamic property names.
   - [3.4](#3.4) <a name='3.4'></a> 동적 프로퍼티명을 갖는 오브젝트를 작성할때, 계산된 프로퍼티명(computed property names)을 이용해 주십시오.
 
-  > Why? They allow you to define all the properties of an object in one place.
+    > Why? They allow you to define all the properties of an object in one place.
 
-  > 왜? 오브젝트의 모든 프로퍼티를 한 장소에서 정의 할 수 있습니다.
+    > 왜? 오브젝트의 모든 프로퍼티를 한 장소에서 정의 할 수 있습니다.
 
     ```javascript
     function getKey(k) {
@@ -248,9 +248,9 @@
   - [3.6](#3.6) <a name='3.6'></a> Use property value shorthand.
   - [3.6](#3.6) <a name='3.6'></a> 프로퍼티의 단축구문을 이용해 주십시오.
 
-  > Why? It is shorter to write and descriptive.
+    > Why? It is shorter to write and descriptive.
 
-  > 왜? 기술과 설명이 간결해지기 때문입니다.
+    > 왜? 기술과 설명이 간결해지기 때문입니다.
 
     ```javascript
     const lukeSkywalker = 'Luke Skywalker';
@@ -269,9 +269,9 @@
   - [3.7](#3.7) <a name='3.7'></a> Group your shorthand properties at the beginning of your object declaration.
   - [3.7](#3.7) <a name='3.7'></a> 프로퍼티의 단축구문은 오브젝트 선언의 시작부분에 그룹화 해주십시오.
 
-  > Why? It's easier to tell which properties are using the shorthand.
+    > Why? It's easier to tell which properties are using the shorthand.
 
-  > 왜? 어떤 프로퍼티가 단축구문을 이용하고 있는지가 알기쉽기 때문입니다.
+    > 왜? 어떤 프로퍼티가 단축구문을 이용하고 있는지가 알기쉽기 때문입니다.
 
     ```javascript
     const anakinSkywalker = 'Anakin Skywalker';
@@ -360,9 +360,9 @@
   - [5.1](#5.1) <a name='5.1'></a> Use object destructuring when accessing and using multiple properties of an object.
   - [5.1](#5.1) <a name='5.1'></a> 하나의 오브젝트에서 복수의 프로퍼티를 억세스 할 때는 오브젝트 구조화대입을 이용해 주십시오.
 
-  > Why? Destructuring saves you from creating temporary references for those properties.
+    > Why? Destructuring saves you from creating temporary references for those properties.
 
-  > 왜? 구조화대입을 이용하는 것으로 프로퍼티를 위한 임시적인 참조의 작성을 줄일 수 있습니다.
+    > 왜? 구조화대입을 이용하는 것으로 프로퍼티를 위한 임시적인 참조의 작성을 줄일 수 있습니다.
 
     ```javascript
     // bad
@@ -402,9 +402,9 @@
   - [5.3](#5.3) <a name='5.3'></a> Use object destructuring for multiple return values, not array destructuring.
   - [5.3](#5.3) <a name='5.3'></a> 복수의 값을 반환하는 경우는 배열의 구조화대입이 아닌 오브젝트의 구조화대입을 이용해 주십시오.
 
-  > Why? You can add new properties over time or change the order of things without breaking call sites.
+    > Why? You can add new properties over time or change the order of things without breaking call sites.
 
-  > 왜? 이렇게 함으로써 나중에 호출처에 영향을 주지않고 새로운 프로퍼티를 추가하거나 순서를 변경할수 있습니다.
+    > 왜? 이렇게 함으로써 나중에 호출처에 영향을 주지않고 새로운 프로퍼티를 추가하거나 순서를 변경할수 있습니다.
 
     ```javascript
     // bad
@@ -472,9 +472,9 @@
   - [6.4](#6.4) <a name='6.4'></a> When programmatically building up strings, use template strings instead of concatenation.
   - [6.4](#6.4) <a name='6.4'></a> 프로그램에서 문자열을 생성하는 경우는 문자열 연결이 아닌 template strings를 이용해 주십시오.
 
-  > Why? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
+    > Why? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
 
-  > 왜? Template strings 는 문자열 보간기능과 적절한 줄바꿈 기능을 갖는 간결한 구문으로 가독성이 좋기 때문입니다.
+    > 왜? Template strings 는 문자열 보간기능과 적절한 줄바꿈 기능을 갖는 간결한 구문으로 가독성이 좋기 때문입니다.
 
     ```javascript
     // bad
@@ -503,9 +503,9 @@
   - [7.1](#7.1) <a name='7.1'></a> Use function declarations instead of function expressions.
   - [7.1](#7.1) <a name='7.1'></a> 함수식 보다 함수선언을 이용해 주십시오.
 
-  > Why? Function declarations are named, so they're easier to identify in call stacks. Also, the whole body of a function declaration is hoisted, whereas only the reference of a function expression is hoisted. This rule makes it possible to always use [Arrow Functions](#arrow-함수arrow-functions) in place of function expressions.
+    > Why? Function declarations are named, so they're easier to identify in call stacks. Also, the whole body of a function declaration is hoisted, whereas only the reference of a function expression is hoisted. This rule makes it possible to always use [Arrow Functions](#arrow-함수arrow-functions) in place of function expressions.
 
-  > 왜? 이름이 부여된 함수선언은 콜스택에서 간단하게 확인하는 것이 가능합니다. 또한 함수선언은 함수의 본체가 hoist 되어집니다. 그에 반해 함수식은 참조만이 hoist 되어집니다.
+    > 왜? 이름이 부여된 함수선언은 콜스택에서 간단하게 확인하는 것이 가능합니다. 또한 함수선언은 함수의 본체가 hoist 되어집니다. 그에 반해 함수식은 참조만이 hoist 되어집니다.
   이 룰에 의해 함수식의 부분을 항상 [Arrow함수](#arrow함수arrow-functions)에서 이용하는것이 가능합니다.
 
     ```javascript
@@ -571,9 +571,9 @@
   - [7.6](#7.6) <a name='7.6'></a> Never use `arguments`, opt to use rest syntax `...` instead.
   - [7.6](#7.6) <a name='7.6'></a> 절대 `arguments` 를 이용하지 마십시오. 대신에 rest syntax `...` 를 이용해 주십시오.
 
-  > Why? `...` is explicit about which arguments you want pulled. Plus rest arguments are a real Array and not Array-like like `arguments`.
+    > Why? `...` is explicit about which arguments you want pulled. Plus rest arguments are a real Array and not Array-like like `arguments`.
 
-  > 왜? `...` 을 이용하는것으로 몇개의 파라메터를 이용하고 싶은가를 확실하게 할 수 있습니다. 더해서 rest 파라메터는 `arguments` 와 같은 Array-like 오브젝트가 아닌 진짜 Array 입니다.
+    > 왜? `...` 을 이용하는것으로 몇개의 파라메터를 이용하고 싶은가를 확실하게 할 수 있습니다. 더해서 rest 파라메터는 `arguments` 와 같은 Array-like 오브젝트가 아닌 진짜 Array 입니다.
 
     ```javascript
     // bad
@@ -623,21 +623,21 @@
   - [7.8](#7.8) <a name='7.8'></a> Avoid side effects with default parameters.
   - [7.8](#7.8) <a name='7.8'></a> side effect가 있을 default 파라메터의 이용은 피해 주십시오.
 
-  > Why? They are confusing to reason about.
+    > Why? They are confusing to reason about.
 
-  > 왜? 혼란을 야기하기 때문입니다.
+    > 왜? 혼란을 야기하기 때문입니다.
 
-  ```javascript
-  var b = 1;
-  // bad
-  function count(a = b++) {
-    console.log(a);
-  }
-  count();  // 1
-  count();  // 2
-  count(3); // 3
-  count();  // 3
-  ```
+    ```javascript
+    var b = 1;
+    // bad
+    function count(a = b++) {
+      console.log(a);
+    }
+    count();  // 1
+    count();  // 2
+    count(3); // 3
+    count();  // 3
+    ```
 
   - [7.9](#7.9) <a name='7.9'></a> Always put default parameters last.
   - [7.9](#7.9) <a name='7.9'></a> 항상 default 파라메터는 뒤쪽에 두십시오.
@@ -676,13 +676,13 @@
   - [8.1](#8.1) <a name='8.1'></a> When you must use function expressions (as when passing an anonymous function), use arrow function notation.
   - [8.1](#8.1) <a name='8.1'></a> (무명함수를 전달하는 듯한)함수식을 이용하는 경우 arrow함수 표기를 이용해 주십시오.
 
-  > Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
+    > Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
 
-  > 왜? arrow함수는 그 context의 `this` 에서 실행하는 버전의 함수를 작성합니다. 이것은 통상 기대대로의 동작을 하고, 보다 간결한 구문이기 때문입니다.
+    > 왜? arrow함수는 그 context의 `this` 에서 실행하는 버전의 함수를 작성합니다. 이것은 통상 기대대로의 동작을 하고, 보다 간결한 구문이기 때문입니다.
 
-  > Why not? If you have a fairly complicated function, you might move that logic out into its own function declaration.
+    > Why not? If you have a fairly complicated function, you might move that logic out into its own function declaration.
 
-  > 이용해야만 하지 않나？ 복잡한 함수에서 로직을 정의한 함수의 바깥으로 이동하고 싶을때.
+    > 이용해야만 하지 않나？ 복잡한 함수에서 로직을 정의한 함수의 바깥으로 이동하고 싶을때.
 
     ```javascript
     // bad
@@ -701,13 +701,13 @@
   - [8.2](#8.2) <a name='8.2'></a> If the function body consists of a single expression, feel free to omit the braces and use the implicit return. Otherwise use a `return` statement.
   - [8.2](#8.2) <a name='8.2'></a> 함수의 본체가 하나의 식으로 구성된 경우에는 중괄호({})를 생략하고 암시적 return을 이용하는것이 가능합니다. 그 외에는 `return` 문을 이용해 주십시오.
 
-  > Why? Syntactic sugar. It reads well when multiple functions are chained together.
+    > Why? Syntactic sugar. It reads well when multiple functions are chained together.
 
-  > 왜? 문법 설탕이니까요. 복수의 함수가 연결된 경우에 읽기 쉬워집니다.
+    > 왜? 문법 설탕이니까요. 복수의 함수가 연결된 경우에 읽기 쉬워집니다.
 
-  > Why not? If you plan on returning an object.
+    > Why not? If you plan on returning an object.
 
-  > 사용해야만 하지 않아? 오브젝트를 반환할때.
+    > 사용해야만 하지 않아? 오브젝트를 반환할때.
 
     ```javascript
     // good
@@ -729,9 +729,9 @@
   - [8.3](#8.3) <a name='8.3'></a> In case the expression spans over multiple lines, wrap it in parentheses for better readability.
   - [8.3](#8.3) <a name='8.3'></a> 식이 복수행에 걸쳐있을 경우는 가독성을 더욱 좋게하기 위해 소괄호()로 감싸 주십시오.
 
-  > Why? It shows clearly where the function starts and ends.
+    > Why? It shows clearly where the function starts and ends.
 
-  > 왜? 함수의 개시와 종료부분이 알기쉽게 보이기 때문입니다.
+    > 왜? 함수의 개시와 종료부분이 알기쉽게 보이기 때문입니다.
 
     ```js
     // bad
@@ -750,9 +750,9 @@
   - [8.4](#8.4) <a name='8.4'></a> If your function only takes a single argument, feel free to omit the parentheses.
   - [8.4](#8.4) <a name='8.4'></a> 함수의 인수가 하나인 경우 소괄호()를 생략하는게 가능합니다.
 
-  > Why? Less visual clutter.
+    > Why? Less visual clutter.
 
-  > 왜? 별로 보기 어렵지 않기 때문입니다.
+    > 왜? 별로 보기 어렵지 않기 때문입니다.
 
     ```javascript
     // good
@@ -770,9 +770,9 @@
   - [9.1](#9.1) <a name='9.1'></a> Always use `class`. Avoid manipulating `prototype` directly.
   - [9.1](#9.1) <a name='9.1'></a> `prototype` 을 직접 조작하는것을 피하고 항상 `class` 를 이용해 주십시오.
 
-  > Why? `class` syntax is more concise and easier to reason about.
+    > Why? `class` syntax is more concise and easier to reason about.
 
-  > 왜? `class` 구문은 간결하고 의미를 알기 쉽기 때문입니다.
+    > 왜? `class` 구문은 간결하고 의미를 알기 쉽기 때문입니다.
 
     ```javascript
     // bad
@@ -801,9 +801,9 @@
   - [9.2](#9.2) <a name='9.2'></a> Use `extends` for inheritance.
   - [9.2](#9.2) <a name='9.2'></a> 상속은 `extends` 를 이용해 주십시오.
 
-  > Why? It is a built-in way to inherit prototype functionality without breaking `instanceof`.
+    > Why? It is a built-in way to inherit prototype functionality without breaking `instanceof`.
 
-  > 왜? `instanceof` 를 파괴하지 않고 프로토타입 상속을 하기 위해 빌트인 된 방법이기 때문입니다.
+    > 왜? `instanceof` 를 파괴하지 않고 프로토타입 상속을 하기 위해 빌트인 된 방법이기 때문입니다.
 
     ```javascript
     // bad
@@ -889,9 +889,9 @@
   - [10.1](#10.1) <a name='10.1'></a> Always use modules (`import`/`export`) over a non-standard module system. You can always transpile to your preferred module system.
   - [10.1](#10.1) <a name='10.1'></a> 비표준 모듈시스템이 아닌 항상 (`import`/`export`) 를 이용해 주십시오. 이렇게 함으로써 선호하는 모듈시스템에 언제라도 옮겨가는게 가능해 집니다.
 
-  > Why? Modules are the future, let's start using the future now.
+    > Why? Modules are the future, let's start using the future now.
 
-  > 왜? 모듈은 미래가 있습니다. 지금 그 미래를 사용하여 시작합시다.
+    > 왜? 모듈은 미래가 있습니다. 지금 그 미래를 사용하여 시작합시다.
 
     ```javascript
     // bad
@@ -910,9 +910,9 @@
   - [10.2](#10.2) <a name='10.2'></a> Do not use wildcard imports.
   - [10.2](#10.2) <a name='10.2'></a> wildcard import 는 이용하지 마십시오.
 
-  > Why? This makes sure you have a single default export.
+    > Why? This makes sure you have a single default export.
 
-  > 왜? single default export 임을 주의할 필요가 있습니다.
+    > 왜? single default export 임을 주의할 필요가 있습니다.
 
     ```javascript
     // bad
@@ -925,9 +925,9 @@
   - [10.3](#10.3) <a name='10.3'></a>And do not export directly from an import.
   - [10.3](#10.3) <a name='10.3'></a> import 문으로부터 직접 export 하는것은 하지말아 주십시오.
 
-  > Why? Although the one-liner is concise, having one clear way to import and one clear way to export makes things consistent.
+    > Why? Although the one-liner is concise, having one clear way to import and one clear way to export makes things consistent.
 
-  > 왜? 한줄짜리는 간결하지만 import 와 export 방법을 명확히 한가지로 해서 일관성을 갖는 것이 가능합니다.
+    > 왜? 한줄짜리는 간결하지만 import 와 export 방법을 명확히 한가지로 해서 일관성을 갖는 것이 가능합니다.
 
     ```javascript
     // bad
@@ -947,9 +947,9 @@
   - [11.1](#11.1) <a name='11.1'></a> Don't use iterators. Prefer JavaScript's higher-order functions like `map()` and `reduce()` instead of loops like `for-of`.
   - [11.1](#11.1) <a name='11.1'></a> iterators를 이용하지 마십시오. `for-of` 루프 대신에 `map()` 과 `reduce()` 와 같은 JavaScript 고급함수(higher-order functions)를 이용해 주십시오.
 
-  > Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side-effects.
+    > Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side-effects.
 
-  > 왜? 고급함수는 immutable(불변)룰을 적용합니다. side effect에 대해 추측하는거보다 값을 반환하는 순수 함수를 다루는게 간단하기 때문입니다.
+    > 왜? 고급함수는 immutable(불변)룰을 적용합니다. side effect에 대해 추측하는거보다 값을 반환하는 순수 함수를 다루는게 간단하기 때문입니다.
 
     ```javascript
     const numbers = [1, 2, 3, 4, 5];
@@ -975,9 +975,9 @@
   - [11.2](#11.2) <a name='11.2'></a> Don't use generators for now.
   - [11.2](#11.2) <a name='11.2'></a> 현시점에서는 generators는 이용하지 마십시오.
 
-  > Why? They don't transpile well to ES5.
+    > Why? They don't transpile well to ES5.
 
-  > 왜? ES5로 잘 transpile 하지 않기 때문입니다.
+    > 왜? ES5로 잘 transpile 하지 않기 때문입니다.
 
 **[⬆ back to top](#목차)**
 
@@ -1060,9 +1060,9 @@
   - [13.3](#13.3) <a name='13.3'></a> Group all your `const`s and then group all your `let`s.
   - [13.3](#13.3) <a name='13.3'></a> 우선 `const` 를 그룹화하고 다음에 `let` 을 그룹화 해주십시오.
 
-  > Why? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
+    > Why? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
 
-  > 왜? 이전에 할당한 변수에 대해 나중에 새 변수를 추가하는 경우에 유용하기 때문입니다.
+    > 왜? 이전에 할당한 변수에 대해 나중에 새 변수를 추가하는 경우에 유용하기 때문입니다.
 
     ```javascript
     // bad
@@ -1088,9 +1088,9 @@
   - [13.4](#13.4) <a name='13.4'></a> Assign variables where you need them, but place them in a reasonable place.
   - [13.4](#13.4) <a name='13.4'></a> 변수를 할당할때는 필요하고 합리적인 장소에 두시기 바랍니다.
 
-  > Why? `let` and `const` are block scoped and not function scoped.
+    > Why? `let` and `const` are block scoped and not function scoped.
 
-  > 왜? `let` 과 `const` 는 블록스코프이기 때문입니다. 함수스코프가 아닙니다.
+    > 왜? `let` 과 `const` 는 블록스코프이기 때문입니다. 함수스코프가 아닙니다.
 
     ```javascript
     // good
@@ -1805,9 +1805,9 @@
   - [19.2](#19.2) <a name='19.2'></a> Additional trailing comma: **Yup.**
   - [19.2](#19.2) <a name='19.2'></a> 끝의 콤마 **좋아요**
 
-  > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don't have to worry about the [trailing comma problem](es5/README.md#commas) in legacy browsers.
+    > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don't have to worry about the [trailing comma problem](es5/README.md#commas) in legacy browsers.
 
-  > 왜? 이것은 깨끗한 git의 diffs 로 이어집니다. 또한 Babel과 같은 트랜스파일러는 transpile 하는 사이에 쓸데없는 끝의 콤마를 제거합니다. 이것은 레거시브라우저에서의 [불필요한 콤마 문제](./README.md#commas)를 고민할 필요가 없다는것을 의미합니다.
+    > 왜? 이것은 깨끗한 git의 diffs 로 이어집니다. 또한 Babel과 같은 트랜스파일러는 transpile 하는 사이에 쓸데없는 끝의 콤마를 제거합니다. 이것은 레거시브라우저에서의 [불필요한 콤마 문제](./README.md#commas)를 고민할 필요가 없다는것을 의미합니다.
 
     ```javascript
     // bad - git diff without trailing comma
