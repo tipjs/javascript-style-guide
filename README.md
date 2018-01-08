@@ -89,7 +89,7 @@
 ## 참조(References)
 
   - [2.1](#2.1) <a name='2.1'></a> Use `const` for all of your references; avoid using `var`.
-  - [2.1](#2.1) <a name='2.1'></a> 모든 참조는 `const` 를 사용하고, `var` 를 사용하지 마십시오.
+  - [2.1](#2.1) <a name='2.1'></a> 모든 참조에는 `const` 를 사용하고, `var` 를 사용하지 마십시오.
 
     > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
 
@@ -145,7 +145,7 @@
 ## 오브젝트(Objects)
 
   - [3.1](#3.1) <a name='3.1'></a> Use the literal syntax for object creation.
-  - [3.1](#3.1) <a name='3.1'></a> 오브젝트를 작성할때는, 리터럴 구문을 사용하십시오.
+  - [3.1](#3.1) <a name='3.1'></a> 오브젝트를 작성할때는 리터럴 구문을 사용하십시오.
 
     ```javascript
     // bad
@@ -271,7 +271,7 @@
 
     > Why? It's easier to tell which properties are using the shorthand.
 
-    > 왜? 어떤 프로퍼티가 단축구문을 이용하고 있는지가 알기쉽기 때문입니다.
+    > 왜? 어떤 프로퍼티가 단축구문을 이용하고 있는지 알기 쉽게 해주기 때문입니다.
 
     ```javascript
     const anakinSkywalker = 'Anakin Skywalker';
@@ -358,7 +358,7 @@
 ## 구조화대입(Destructuring)
 
   - [5.1](#5.1) <a name='5.1'></a> Use object destructuring when accessing and using multiple properties of an object.
-  - [5.1](#5.1) <a name='5.1'></a> 하나의 오브젝트에서 복수의 프로퍼티를 억세스 할 때는 오브젝트 구조화대입을 이용해 주십시오.
+  - [5.1](#5.1) <a name='5.1'></a> 하나의 오브젝트에서 복수의 프로퍼티에 억세스 할 때는 오브젝트 구조화대입을 이용해 주십시오.
 
     > Why? Destructuring saves you from creating temporary references for those properties.
 
@@ -678,7 +678,7 @@
 
     > Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
 
-    > 왜? arrow함수는 그 context의 `this` 에서 실행하는 버전의 함수를 작성합니다. 이것은 통상 기대대로의 동작을 하고, 보다 간결한 구문이기 때문입니다.
+    > 왜? arrow함수는 그 context의 `this` 에서 실행하는 버전의 함수를 작성합니다. 이것은 통상 기대한 대로 동작을 하고, 보다 간결한 구문이기 때문입니다.
 
     > Why not? If you have a fairly complicated function, you might move that logic out into its own function declaration.
 
@@ -707,7 +707,7 @@
 
     > Why not? If you plan on returning an object.
 
-    > 사용해야만 하지 않아? 오브젝트를 반환할때.
+    > 사용해야만 하지 않아? 오브젝트를 반환할 때.
 
     ```javascript
     // good
@@ -731,7 +731,7 @@
 
     > Why? It shows clearly where the function starts and ends.
 
-    > 왜? 함수의 개시와 종료부분이 알기쉽게 보이기 때문입니다.
+    > 왜? 함수의 개시와 종료부분을 알기 쉽게 해주기 때문입니다.
 
     ```js
     // bad
@@ -863,7 +863,7 @@
 
 
   - [9.4](#9.4) <a name='9.4'></a> It's okay to write a custom toString() method, just make sure it works successfully and causes no side effects.
-  - [9.4](#9.4) <a name='9.4'></a> 독자의 toString()을 작성하는것을 허용하지만 올바르게 동작하는지와 side effect 가 없는지만 확인해 주십시오.
+  - [9.4](#9.4) <a name='9.4'></a> 독자의 toString()을 작성하는 것을 허용하지만 올바르게 동작하는지와 side effect 가 없는지만 확인해 주십시오.
 
     ```javascript
     class Jedi {
@@ -1584,7 +1584,7 @@
 
   - [18.6](#18.6) <a name='18.6'></a> Use indentation when making long method chains. Use a leading dot, which
     emphasizes that the line is a method call, not a new statement.
-  - [18.6](#18.6) <a name='18.6'></a> 길게 메소드를 채이닝하는 경우는 인덴트를 이용해 주십시오. 행이 새로운 문이 아닌 메소드 호출인 것을 강조하기 위해서 선두에 점 (.) 을 배치해 주십시오.
+  - [18.6](#18.6) <a name='18.6'></a> 길게 메소드를 체이닝하는 경우는 인덴트를 이용해 주십시오. 행이 새로운 문이 아닌 메소드 호출인 것을 강조하기 위해서 선두에 점 (.) 을 배치해 주십시오.
 
     ```javascript
     // bad
@@ -1974,7 +1974,7 @@
 ## 명명규칙(Naming Conventions)
 
   - [22.1](#22.1) <a name='22.1'></a> Avoid single letter names. Be descriptive with your naming.
-  - [22.1](#22.1) <a name='22.1'></a> 1문자의 이름은 피해 주십시오. 이름으로부터 의도가 읽혀질수 있게 해주십시오.
+  - [22.1](#22.1) <a name='22.1'></a> 한 문자로 된 이름은 피해 주십시오. 이름으로부터 의도가 읽혀질수 있게 해주십시오.
 
     ```javascript
     // bad
@@ -2040,7 +2040,7 @@
     ```
 
   - [22.5](#22.5) <a name='22.5'></a> Don't save references to `this`. Use arrow functions or Function#bind.
-  - [22.5](#22.5) <a name='22.5'></a> `this` 의 참조를 보존하는것은 피해주십시오. arrow함수나 Function#bind 를 이용해 주십시오.
+  - [22.5](#22.5) <a name='22.5'></a> `this` 의 참조를 보존하는 것은 피해주십시오. arrow함수나 Function#bind 를 이용해 주십시오.
 
     ```javascript
     // bad
@@ -2178,7 +2178,7 @@
 
   - [24.1](#24.1) <a name='24.1'></a> When attaching data payloads to events (whether DOM events or something more proprietary like Backbone events), pass a hash instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
   - [24.1](#24.1) <a name='24.1'></a> (DOM이벤트나 Backbone events 와 같은 독자의) 이벤트로 payload의 값을 넘길 경우는 raw값 보다는 해시값을 넘겨 주십시오.
-이렇게 함으로써, 이후 기여자가 이벤트에 관련한 모든 핸들러를 찾아서 갱신하는 대신 이벤트 payload에 값을 추가하는 것이 가능합니다. 예를들면 아래와 같이
+이렇게 함으로써, 이후 기여자가 이벤트에 관련한 모든 핸들러를 찾아서 갱신하는 대신 이벤트 payload에 값을 추가하는 것이 가능합니다. 예를들면 아래와 같이:
 
     ```javascript
     // bad
@@ -2192,7 +2192,7 @@
     ```
 
     prefer:
-    이쪽이 좋습니다:
+    이쪽이 더 좋습니다:
 
     ```javascript
     // good
@@ -2211,7 +2211,7 @@
 ## jQuery
 
   - [25.1](#25.1) <a name='25.1'></a> Prefix jQuery object variables with a `$`.
-  - [25.1](#25.1) <a name='25.1'></a> jQuery오브젝트의 변수는 선두에 `$` 를 부여해 주십시오.
+  - [25.1](#25.1) <a name='25.1'></a> jQuery오브젝트의 변수는 선두에 `$` 를 붙여주십시오.
 
     ```javascript
     // bad
