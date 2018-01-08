@@ -93,7 +93,7 @@
 
     > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
 
-    > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는것을 방지합니다.
+    > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는 것을 방지합니다.
 
     ```javascript
     // bad
@@ -127,7 +127,7 @@
     ```
 
   - [2.3](#2.3) <a name='2.3'></a> Note that both `let` and `const` are block-scoped.
-  - [2.3](#2.3) <a name='2.3'></a> `let` 과 `const` 는 같이 블록스코프라는것을 유의하십시오.
+  - [2.3](#2.3) <a name='2.3'></a> `let` 과 `const` 는 둘 다 블록스코프라는 것을 유의하십시오.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
@@ -436,7 +436,7 @@
 ## 문자열(Strings)
 
   - [6.1](#6.1) <a name='6.1'></a> Use single quotes `''` for strings.
-  - [6.1](#6.1) <a name='6.1'></a> 문자열에는 싱크쿼트 `''` 를 사용해 주십시오.
+  - [6.1](#6.1) <a name='6.1'></a> 문자열에는 작은 따옴표 `''` 를 사용해 주십시오.
 
     ```javascript
     // bad
@@ -493,7 +493,7 @@
     }
     ```
   - [6.5](#6.5) <a name='6.5'></a> Never use `eval()` on a string, it opens too many vulnerabilities.
-  - [6.5](#6.5) <a name='6.5'></a> 절대로 `eval()` 을 이용하지 마십시오. 이것은 많은 취약점을 만들기 때문입니다.
+  - [6.5](#6.5) <a name='6.5'></a> 절대로 `eval()` 을 이용하지 마십시오. 이것은 많은 취약점을 만듭니다.
 
 **[⬆ back to top](#목차)**
 
@@ -501,7 +501,7 @@
 ## 함수(Functions)
 
   - [7.1](#7.1) <a name='7.1'></a> Use function declarations instead of function expressions.
-  - [7.1](#7.1) <a name='7.1'></a> 함수식 보다 함수선언을 이용해 주십시오.
+  - [7.1](#7.1) <a name='7.1'></a> 함수식 대신 함수선언을 이용해 주십시오.
 
     > Why? Function declarations are named, so they're easier to identify in call stacks. Also, the whole body of a function declaration is hoisted, whereas only the reference of a function expression is hoisted. This rule makes it possible to always use [Arrow Functions](#arrow-함수arrow-functions) in place of function expressions.
 
@@ -825,7 +825,7 @@
     ```
 
   - [9.3](#9.3) <a name='9.3'></a> Methods can return `this` to help with method chaining.
-  - [9.3](#9.3) <a name='9.3'></a> 메소드의 반환값으로 `this` 를 반환하는 것으로 메소드채이닝을 할 수 있습니다.
+  - [9.3](#9.3) <a name='9.3'></a> 메소드의 반환값으로 `this` 를 반환함으로써 메소드 체이닝을 할 수 있습니다.
 
     ```javascript
     // bad
@@ -923,7 +923,7 @@
     ```
 
   - [10.3](#10.3) <a name='10.3'></a>And do not export directly from an import.
-  - [10.3](#10.3) <a name='10.3'></a> import 문으로부터 직접 export 하는것은 하지말아 주십시오.
+  - [10.3](#10.3) <a name='10.3'></a> import 문으로부터 직접 export 하지마십시오.
 
     > Why? Although the one-liner is concise, having one clear way to import and one clear way to export makes things consistent.
 
@@ -949,7 +949,7 @@
 
     > Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side-effects.
 
-    > 왜? 고급함수는 immutable(불변)룰을 적용합니다. side effect에 대해 추측하는거보다 값을 반환하는 순수 함수를 다루는게 간단하기 때문입니다.
+    > 왜? 고급함수는 immutable(불변)룰을 적용합니다. side effect에 대해 추측하는 것보다 값을 반환하는 순수 함수를 다루는게 간단하기 때문입니다.
 
     ```javascript
     const numbers = [1, 2, 3, 4, 5];
