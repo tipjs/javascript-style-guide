@@ -93,7 +93,7 @@
 
     > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
 
-    > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는 것을 방지합니다.
+    > 왜? 참조를 재할당 할 수 없게 함으로써 이해하기 어려운 동시에 버그로 이어지는 코드를 방지합니다.
 
     ```javascript
     // bad
