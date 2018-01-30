@@ -1151,7 +1151,7 @@ Other Style Guides
   <a name="arrows--one-arg-parens"></a><a name="8.4"></a>
   - [8.4](#arrows--one-arg-parens) If your function takes a single argument and doesn’t use braces, omit the parentheses. Otherwise, always include parentheses around arguments for clarity and consistency. Note: it is also acceptable to always use parentheses, in which case use the [“always” option](https://eslint.org/docs/rules/arrow-parens#always) for eslint or do not include [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam) for jscs. eslint: [`arrow-parens`](https://eslint.org/docs/rules/arrow-parens.html) jscs:  [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam)
   <a name="arrows--one-arg-parens"></a><a name="8.4"></a>
-  - [8.4](#arrows--one-arg-parens) 함수의 인자가 하나인 경우 소괄호를 생략할 수 있습니다. 그 외에는 명확성과 일관성을 위해 항상 괄호를 사용하세요. 참고: 항상 괄호를 사용하는 것도 괜찮습니다. 이 경우 eslint에서 [“always” 옵션](https://eslint.org/docs/rules/arrow-parens#always)을 사용하거나 jscs에 [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam)를 포함하지 마세요. eslint: [`arrow-parens`](https://eslint.org/docs/rules/arrow-parens.html) jscs: [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam)
+  - [8.4](#arrows--one-arg-parens) 함수의 인자가 하나인 경우 소괄호를 생략할 수 있습니다. 그 외에는 명확성과 일관성을 위해 항상 괄호를 사용하세요. 참고: 모든 경우에 괄호를 사용하는 것도 괜찮습니다. 이 경우 eslint에서 [“always” 옵션](https://eslint.org/docs/rules/arrow-parens#always)을 사용하거나 jscs에 [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam)를 포함하지 마세요. eslint: [`arrow-parens`](https://eslint.org/docs/rules/arrow-parens.html) jscs: [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam)
 
     > Why? Less visual clutter.
 
@@ -3710,6 +3710,8 @@ Other Style Guides
 
   <a name="es5-compat--kangax"></a><a name="26.1"></a>
   - [27.1](#es5-compat--kangax) Refer to [Kangax](https://twitter.com/kangax/)’s ES5 [compatibility table](https://kangax.github.io/es5-compat-table/).
+  <a name="es5-compat--kangax"></a><a name="26.1"></a>
+  - [27.1](#es5-compat--kangax) [Kangax](https://twitter.com/kangax/)의 ES5 [호환성 표](https://kangax.github.io/es5-compat-table/)를 참고하세요.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -3718,26 +3720,32 @@ Other Style Guides
 
   <a name="es6-styles"></a><a name="27.1"></a>
   - [28.1](#es6-styles) This is a collection of links to the various ES6+ features.
+  <a name="es6-styles"></a><a name="27.1"></a>
+  - [28.1](#es6-styles) 여러 ES6+ 기능과 관련된 링크 모음입니다.
 
-1. [Arrow Functions](#arrow-functions)
-1. [Classes](#classes--constructors)
-1. [Object Shorthand](#es6-object-shorthand)
-1. [Object Concise](#es6-object-concise)
-1. [Object Computed Properties](#es6-computed-properties)
-1. [Template Strings](#es6-template-literals)
-1. [Destructuring](#destructuring)
-1. [Default Parameters](#es6-default-parameters)
-1. [Rest](#es6-rest)
-1. [Array Spreads](#es6-array-spreads)
-1. [Let and Const](#references)
-1. [Exponentiation Operator](#es2016-properties--exponentiation-operator)
-1. [Iterators and Generators](#iterators-and-generators)
-1. [Modules](#modules)
+1. [화살표 함수 (Arrow Functions)](#화살표-함수-arrow-functions)
+1. [클래스 (Classes)](#클래스와-&-생성자-classes--constructors)
+1. [객체 단축형 (Object Shorthand)](#es6-object-shorthand)
+1. [객체 속성 단축형 (Object Concise)](#es6-object-concise)
+1. [객체 속성 계산 (Object Computed Properties)](#es6-computed-properties)
+1. [템플릿 문자열 (Template Strings)](#es6-template-literals)
+1. [비구조화 (Destructuring)](#비구조화-destructuring)
+1. [기본 매개변수 (Default Parameters)](#es6-default-parameters)
+1. [나머지 구문 (Rest)](#es6-rest)
+1. [배열 전개 (Array Spreads)](#es6-array-spreads)
+1. [Let과 Const (Let and Const)](#참조-references)
+1. [제곱 연산자 (Exponentiation Operator)](#es2016-properties--exponentiation-operator)
+1. [이터레이터와 제너레이터 (Iterators and Generators)](#이터레이터와-제너레이터-iterators-and-generators)
+1. [모듈 (Modules)](#모듈-modules)
 
   <a name="tc39-proposals"></a>
   - [28.2](#tc39-proposals) Do not use [TC39 proposals](https://github.com/tc39/proposals) that have not reached stage 3.
+  <a name="tc39-proposals"></a>
+  - [28.2](#tc39-proposals) 스테이지3에 이르지 못하는 [TC39 proposals](https://github.com/tc39/proposals)를 사용하지 마세요.
 
     > Why? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
+
+    > 왜? [그것들은 마무리되지 않았습니다.](https://tc39.github.io/process-document/), 그리고 이들은 변경되거나 완전히 폐기될 수도 있습니다. 자바스크립트를 사용하고 싶지만, proposals는 아직 자바스크립트가 아닙니다.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -3746,12 +3754,20 @@ Other Style Guides
   The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects)
   contains utilities that are functionally broken but remain for legacy reasons.
 
+  [표준 라이브러리](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects)는 기능적으로 문제가 있지만 레거시 이유로 아직 남아있는 유틸리티들을 포함하고 있습니다.
+
   <a name="standard-library--isnan"></a>
   - [29.1](#standard-library--isnan) Use `Number.isNaN` instead of global `isNaN`.
+    eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
+  <a name="standard-library--isnan"></a>
+  - [29.1](#standard-library--isnan) 전역 `isNaN` 대신 `Number.isNaN`을 사용하세요.
     eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
     > Why? The global `isNaN` coerces non-numbers to numbers, returning true for anything that coerces to NaN.
     > If this behavior is desired, make it explicit.
+
+    > 왜? 전역 `isNaN`은 숫자가 아닌 것을 숫자로 강제하고, NaN으로 간주되는 모든 것을 true로 반환합니다.
+    > 만약 이것을 사용해야 한다면 명시적으로 사용하세요.
 
     ```javascript
     // bad
@@ -3766,9 +3782,15 @@ Other Style Guides
   <a name="standard-library--isfinite"></a>
   - [29.2](#standard-library--isfinite) Use `Number.isFinite` instead of global `isFinite`.
     eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
+  <a name="standard-library--isfinite"></a>
+  - [29.2](#standard-library--isfinite) 전역 `isFinite` 대신 `Number.isFinite`을 사용하세요.
+    eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
     > Why? The global `isFinite` coerces non-numbers to numbers, returning true for anything that coerces to a finite number.
     > If this behavior is desired, make it explicit.
+
+    > 왜? 전역 `isFinite`은 숫자가 아닌 것을 숫자로 강제하고, 유한한 숫자로 간주되는 모든 것을 true로 반환합니다.
+    > 만약 이것을 사용해야 한다면 명시적으로 사용하세요.
 
     ```javascript
     // bad
@@ -3785,6 +3807,8 @@ Other Style Guides
 
   <a name="testing--yup"></a><a name="28.1"></a>
   - [30.1](#testing--yup) **Yup.**
+  <a name="testing--yup"></a><a name="28.1"></a>
+  - [30.1](#testing--yup) **합시다.**
 
     ```javascript
     function foo() {
@@ -3800,6 +3824,15 @@ Other Style Guides
     - We primarily use [`mocha`](https://www.npmjs.com/package/mocha) at Airbnb. [`tape`](https://www.npmjs.com/package/tape) is also used occasionally for small, separate modules.
     - 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.
     - Whenever you fix a bug, _write a regression test_. A bug fixed without a regression test is almost certainly going to break again in the future.
+
+  <a name="testing--for-real"></a><a name="28.2"></a>
+  - [30.2](#testing--for-real) **진지하게 생각해보죠**:
+    - 어떤 테스트 프레임워크를 사용하든 테스트를 작성하세요!
+    - 작고 순수한 기능을 쓰도록 노력하고, 조작이 일어나는 곳을 최소화하세요.
+    - stubs과 mocks에 주의하세요 - 테스트를 더 다루기 힘들게 만들 수 있습니다.
+    - Airbnb에서는 [`mocha`](https://www.npmjs.com/package/mocha)를 주로 사용합니다. [`tape`](https://www.npmjs.com/package/tape)도 때때로 작은 개별 모듈에 사용됩니다.
+    - 100% 테스트 적용 범위에 도달하는 것이 항상 실용적이지는 않지만, 좋은 목표입니다.
+    - 버그를 고칠 때마다 _회귀 테스트_ 를 작성하세요. 회귀 테스트 없이 고쳐진 버그는 미래에 거의 분명히 문제를 다시 일으킵니다. 
 
 **[⬆ back to top](#table-of-contents)**
 
