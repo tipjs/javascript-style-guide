@@ -106,7 +106,7 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 참조 (References)
 
@@ -168,7 +168,7 @@
     console.log(b); // ReferenceError
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 객체 (Objects)
 
@@ -369,7 +369,7 @@
     const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 배열 (Arrays)
 
@@ -499,7 +499,7 @@
   <a name="arrays--bracket-newline"></a>
   - [4.7](#arrays--bracket-newline) Use line breaks after open and before close array brackets if an array has multiple lines
   <a name="arrays--bracket-newline"></a>
-  - [4.7](#arrays--bracket-newline) 배열이 여러 줄이라면 배열을 연 이후와 닫기 이전에 개행을 해주세요. 
+  - [4.7](#arrays--bracket-newline) 배열이 여러 줄에 걸쳐 있다면 배열을 연 이후와 닫기 이전에 줄바꿈을 해주세요. 
     ```javascript
     // bad
     const arr = [
@@ -534,7 +534,7 @@
     ];
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 비구조화 (Destructuring)
 
@@ -617,7 +617,7 @@
     const { left, top } = processInput(input);
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 문자열 (Strings)
 
@@ -716,7 +716,7 @@
     const foo = `my name is '${name}'`;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 함수 (Functions)
 
@@ -1044,7 +1044,7 @@
     );
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 화살표 함수 (Arrow Functions)
 
@@ -1204,7 +1204,7 @@
     };
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 클래스 & 생성자 (Classes & Constructors)
 
@@ -1387,7 +1387,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 모듈 (Modules)
 
@@ -1582,7 +1582,7 @@
     import barCss from 'bar.css';
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 이터레이터와 제너레이터 (Iterators and Generators)
 
@@ -1710,7 +1710,7 @@
     };
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 속성 (Properties)
 
@@ -1762,7 +1762,7 @@
     const binary = 2 ** 10;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 변수 (Variables)
 
@@ -1978,7 +1978,7 @@
     const foo = 'superLongLongLongLongLongLongLongLongString';
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 호이스팅 (Hoisting)
 
@@ -2094,7 +2094,7 @@
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting/) by [Ben Cherry](http://www.adequatelygood.com/).
   - 더 자세한 정보는 이곳을 참고해주세요 [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting/) by [Ben Cherry](http://www.adequatelygood.com/).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 비교 연산자 (Comparison Operators & Equality)
 
@@ -2299,7 +2299,7 @@
     const bar = a + b / c * d;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 블록 (Blocks)
 
@@ -2423,7 +2423,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 제어문 (Control Statements)
 
@@ -2485,7 +2485,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 주석 (Comments)
 
@@ -2640,7 +2640,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 공백 (Whitespace)
 
@@ -2968,7 +2968,7 @@
   <a name="whitespace--max-len"></a><a name="18.12"></a>
   - [19.12](#whitespace--max-len) Avoid having lines of code that are longer than 100 characters (including whitespace). Note: per [above](#strings--line-length), long strings are exempt from this rule, and should not be broken up. eslint: [`max-len`](https://eslint.org/docs/rules/max-len.html) jscs: [`maximumLineLength`](http://jscs.info/rule/maximumLineLength)
   <a name="whitespace--max-len"></a><a name="18.12"></a>
-  - [19.12](#whitespace--max-len) 한 줄의 코드가 100자를 넘기는 것을 피하세요. (공백을 포함해서요.). 주의: [앞의 규칙](#strings--line-length)에 따르면, 긴 문자열은 이 규칙에서 제외되며, 분리되어서는 안 됩니다. eslint: [`max-len`](https://eslint.org/docs/rules/max-len.html) jscs: [`maximumLineLength`](http://jscs.info/rule/maximumLineLength)
+  - [19.12](#whitespace--max-len) 한줄의 코드가 100자를 넘기는 것을 피하세요. (공백 포함) 주의: [앞의 규칙](#strings--line-length)에 따르면, 긴 문자열은 이 규칙에서 제외되며, 분리되어서는 안 됩니다. eslint: [`max-len`](https://eslint.org/docs/rules/max-len.html) jscs: [`maximumLineLength`](http://jscs.info/rule/maximumLineLength)
 
     > Why? This ensures readability and maintainability.
 
@@ -2999,7 +2999,7 @@
       .fail(() => console.log('You have failed this city.'));
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 쉼표 (Commas)
 
@@ -3140,7 +3140,7 @@
     );
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 세미콜론 (Semicolons)
 
@@ -3194,7 +3194,7 @@
 
     [Read more](https://stackoverflow.com/questions/7365172/semicolon-before-self-invoking-function/7365214#7365214).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 형변환과 강제 (Type Casting & Coercion)
 
@@ -3298,7 +3298,7 @@
     const hasAge = !!age;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 명명규칙 (Naming Conventions)
 
@@ -3516,7 +3516,7 @@
     ];
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 접근자 (Accessors)
 
@@ -3593,7 +3593,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 이벤트 (Events)
 
@@ -3628,7 +3628,7 @@
     });
     ```
 
-  **[⬆ back to top](#table-of-contents)**
+  **[⬆ back to top](#목차)**
 
 ## 제이쿼리 (jQuery)
 
@@ -3705,7 +3705,7 @@
     $sidebar.find('ul').hide();
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## ES5 호환성 (ECMAScript 5 Compatibility)
 
@@ -3714,7 +3714,7 @@
   <a name="es5-compat--kangax"></a><a name="26.1"></a>
   - [27.1](#es5-compat--kangax) [Kangax](https://twitter.com/kangax/)의 ES5 [호환성 표](https://kangax.github.io/es5-compat-table/)를 참고하세요.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 <a name="ecmascript-6-styles"></a>
 ## ES6+ 스타일 (ECMAScript 6+ (ES 2015+) Styles)
@@ -3748,7 +3748,7 @@
 
     > 왜? [그것들은 확정되지 않았습니다](https://tc39.github.io/process-document/). 그리고 이들은 변경되거나 완전히 폐기될 수도 있습니다. 우리는 자바스크립트를 사용하기를 원하지만, proposals는 아직 자바스크립트가 아닙니다.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 표준 라이브러리 (Standard Library)
 
@@ -3802,7 +3802,7 @@
     Number.isFinite(parseInt('2e3', 10)); // true
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 테스트 (Testing)
 
@@ -3835,7 +3835,7 @@
     - 100% 테스트 적용 범위에 도달하는 것이 항상 실용적이지는 않지만, 좋은 목표입니다.
     - 버그를 고칠 때마다 _회귀 테스트_ 를 작성하세요. 회귀 테스트 없이 고쳐진 버그는 미래에 거의 분명히 문제를 다시 일으킵니다. 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 성능 (Performance)
 
@@ -3849,7 +3849,7 @@
   - [Are Javascript functions like `map()`, `reduce()`, and `filter()` optimized for traversing arrays?](https://www.quora.com/JavaScript-programming-language-Are-Javascript-functions-like-map-reduce-and-filter-already-optimized-for-traversing-array/answer/Quildreen-Motta)
   - Loading...
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## 자료 (Resources)
 
@@ -3929,7 +3929,7 @@
   - [JavaScript Air](https://javascriptair.com/)
   - [JavaScript Jabber](https://devchat.tv/js-jabber/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## In the Wild
 
@@ -4028,7 +4028,7 @@
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## Translation
 
@@ -4089,7 +4089,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#목차)**
 
 ## Amendments
 
