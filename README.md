@@ -3384,7 +3384,7 @@
   <a name="naming--self-this"></a><a name="22.5"></a>
   - [23.5](#naming--self-this) Don’t save references to `this`. Use arrow functions or [Function#bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind). jscs: [`disallowNodeTypes`](http://jscs.info/rule/disallowNodeTypes)
   <a name="naming--self-this"></a><a name="22.5"></a>
-  - [23.5](#naming--self-this) 참조를 `this`에 저장하지 마세요. 화살표 함수나 [Function#bind]를 사용하세요.(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind). jscs: [`disallowNodeTypes`](http://jscs.info/rule/disallowNodeTypes)
+  - [23.5](#naming--self-this) 참조를 `this`에 저장하지 마세요. 화살표 함수나 [Function#bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)를 사용하세요. jscs: [`disallowNodeTypes`](http://jscs.info/rule/disallowNodeTypes)
 
     ```javascript
     // bad
@@ -3614,6 +3614,7 @@
     ```
 
     prefer:
+
     이쪽이 더 좋습니다:
 
     ```javascript
@@ -3679,7 +3680,7 @@
 
   <a name="jquery--queries"></a><a name="25.3"></a>
   - [26.3](#jquery--queries) For DOM queries use Cascading `$('.sidebar ul')` or parent > child `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
- <a name="jquery--queries"></a><a name="25.3"></a>
+  <a name="jquery--queries"></a><a name="25.3"></a>
   - [26.3](#jquery--queries) DOM 검색에는 `$('.sidebar ul')`이나 parent > child `$('.sidebar > ul')`와 같은 캐스케이딩를 사용하세요. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
 
   <a name="jquery--find"></a><a name="25.4"></a>
@@ -3745,7 +3746,7 @@
 
     > Why? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
 
-    > 왜? [그것들은 마무리되지 않았습니다.](https://tc39.github.io/process-document/), 그리고 이들은 변경되거나 완전히 폐기될 수도 있습니다. 자바스크립트를 사용하고 싶지만, proposals는 아직 자바스크립트가 아닙니다.
+    > 왜? [그것들은 확정되지 않았습니다](https://tc39.github.io/process-document/). 그리고 이들은 변경되거나 완전히 폐기될 수도 있습니다. 우리는 자바스크립트를 사용하기를 원하지만, proposals는 아직 자바스크립트가 아닙니다.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -3934,6 +3935,8 @@
 
   This is a list of organizations that are using this style guide. Send us a pull request and we'll add you to the list.
 
+  아래 목록은 이 스타일 가이드를 사용하고 있는 단체들입니다. 우리에게 풀 리퀘스트를 보내면 리스트에 추가해드리겠습니다.
+
   - **123erfasst**: [123erfasst/javascript](https://github.com/123erfasst/javascript)
   - **3blades**: [3Blades](https://github.com/3blades)
   - **4Catalyzer**: [4Catalyzer/javascript](https://github.com/4Catalyzer/javascript)
@@ -4031,6 +4034,8 @@
 
   This style guide is also available in other languages:
 
+  다른 언어로 이 스타일 가이드를 살펴볼 수 있습니다:
+
   - ![br](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Brazilian Portuguese**: [armoucar/javascript-style-guide](https://github.com/armoucar/javascript-style-guide)
   - ![bg](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Bulgaria.png) **Bulgarian**: [borislavvv/javascript](https://github.com/borislavvv/javascript)
   - ![ca](https://raw.githubusercontent.com/fpmweb/javascript-style-guide/master/img/catala.png) **Catalan**: [fpmweb/javascript-style-guide](https://github.com/fpmweb/javascript-style-guide)
@@ -4089,5 +4094,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## Amendments
 
 We encourage you to fork this guide and change the rules to fit your team’s style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.
+
+우리는 당신이 이 가이드를 포크해서 당신의 팀에 알맞도록 고쳐 쓰기를 바랍니다. 아래에 스타일 가이드의 수정 사항을 나열하세요. 이렇게 하면 병합 충돌(marge conflicts)을 신경쓰지 않고 스타일 가이드를 정기적으로 업데이트 할 수 있습니다. 
 
 # };
