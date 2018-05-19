@@ -202,7 +202,7 @@
 
     ```javascript
     function getKey(k) {
-      return a `key named ${k}`;
+      return `a key named ${k}`;
     }
 
     // bad
