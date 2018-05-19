@@ -1901,7 +1901,7 @@
     ```
 
   - [21.3](#21.3) <a name='21.3'></a> Numbers: Use `Number` for type casting and `parseInt` always with a radix for parsing strings.
-  - [21.3](#21.3) <a name='21.3'></a> 수치의 경우: `Number` 로 형변환하는 경우는 `parseInt` 를 이용하고, 항상 형변환을 위한 기수를 인수로 넘겨 주십시오.
+  - [21.3](#21.3) <a name='21.3'></a> 수치의 경우: 형변환하는 경우는 `Number` 와 `parseInt` 를 사용하고, `parseInt` 는 항상 형변환을 위한 기수를 인수로 넘겨 주십시오.
 
     ```javascript
     const inputValue = '4';
