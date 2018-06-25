@@ -144,7 +144,7 @@
     // good
     someStack.push('abracadabra');
     ```
-
+**difference with es6, use rest function in es6**
   - 배열을 복사 할 필요가있는 경우 Array#slice를 사용하십시오. [jsPerf](http://jsperf.com/converting-arguments-to-an-array/7)
 
     ```javascript
@@ -160,7 +160,7 @@
     // good
     itemsCopy = items.slice();
     ```
-
+**difference with es6, use Array.from in es6**
   - Array와 비슷한(Array-Like)한 Object를 Array에 변환하는 경우는 Array#slice를 사용하십시오. 
 
     ```javascript
@@ -215,7 +215,7 @@
       'with this, you would get nowhere ' +
       'fast.';
     ```
-
+**difference with es6, use template string in es6**
   - 프로그램에서 문자열을 생성 할 필요가 있는 경우 (특히 IE는) 문자열 연결 대신 Array#join을 사용하십시오. [jsPerf](http://jsperf.com/string-vs-array-concat/2).
 
     ```javascript
@@ -358,7 +358,7 @@
 
 
 ## <a name='variables'>Variables</a> [원문](https://github.com/airbnb/javascript#variables)
-
+**difference with es6, use new keyword let and const in es6**
   - 변수를 선언 할 때는 항상 `var`를 사용하십시오. 그렇지 않으면 전역 변수로 선언됩니다. 전역 네임 스페이스를 오염시키지 않도록 Captain Planet도 경고하고 있습니다.
 
     ```javascript
@@ -404,7 +404,7 @@
         length,
         i;
     ```
-
+**difference with es6, let, const is not hoisted in es6**
   - 변수의 할당은 스코프의 시작 부분에서 해주십시오. 이것은 변수 선언과 Hoisting 관련 문제를 해결합니다.
 
     ```javascript
@@ -848,7 +848,7 @@
       superPower: 'strength'
     };
     ```
-
+**difference with es6, ?????????  이거 es6에는 깔끔한 커밋을위해 하라면서 5에는??**
   - 말미의 불필요한 쉼표도 **하지 마십시오.** 이것은 IE6/7과 quirksmode의 IE9에서 문제를 일으킬 수 있습니다.
   또한 ES3의 일부 구현에서 불필요한 쉼표가 있는 경우, 배열 길이를 추가합니다.
   이것은 ES5에서 분명해졌습니다.([source](http://es5.github.io/#D)):
@@ -929,7 +929,7 @@
     // good
     var totalScore = this.reviewScore + ' total score';
     ```
-
+**difference with es6, recommand with Number function in es6**
   - 숫자는`parseInt`를 사용하십시오. 항상 형변환을 위한 기수(radix)를 인수로 전달하십시오.
 
     ```javascript
@@ -1081,7 +1081,7 @@
       };
     }
     ```
-
+**difference with es6, recommand arrow function in es6**
   - 함수에 이름을 붙여주십시오. 이것은 stack traces를 추적하기 쉽게하기 때문입니다.
 
     ```javascript
@@ -1153,7 +1153,7 @@
 
 
 ## <a name='constructors'>Constructors</a> [원문](https://github.com/airbnb/javascript#constructors)
-
+**difference with es6, added class and extends in es6**
   - 새 Object에서 프로토타입을 재정의하는 것이 아니라, 프로토타입 객체에 메서드를 추가해 주십시오. 프로토타입을 재정의하면 상속이 불가능합니다. 프로토타입을 리셋하는것으로 베이스 클래스를 재정의 할 수 있습니다.
 
     ```javascript
@@ -1181,7 +1181,7 @@
       console.log('blocking');
     };
     ```
-
+**cool**
   - 메소드의 반환 값으로 `this`를 반환함으로써 메소드 체인을 할 수 있습니다.
 
     ```javascript
