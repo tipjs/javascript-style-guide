@@ -2294,7 +2294,7 @@
 1. [Object Concise](#es6-object-concise)
 1. [Object Computed Properties](#es6-computed-properties)
 1. [Template Strings](#es6-template-literals)
-1. [Destructuring](#destructuring)
+1. [Destructuring](#구조화대입destructuring)
 1. [Default Parameters](#es6-default-parameters)
 1. [Rest](#es6-rest)
 1. [Array Spreads](#es6-array-spreads)
